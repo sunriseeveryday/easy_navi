@@ -1,0 +1,10 @@
+version: "1.0.0"
+services:
+  node:
+    image: "node:latest"
+    container_name: my_web
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "34572:8081"
